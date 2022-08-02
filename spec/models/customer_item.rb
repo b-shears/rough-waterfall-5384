@@ -5,7 +5,5 @@ RSpec.describe CustomerItem, type: :model do
   describe 'relationships' do
     it { should belong_to :customer }
     it { should belong_to :item }
-    it { should have_many :customer_items }
-    it { should have_many(:items).through(:customer_items) }
   end
 end
