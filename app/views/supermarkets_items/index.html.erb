@@ -1,0 +1,5 @@
+<h1> <%= @supermarket.name %> Index </h1>
+
+  <% @supermarket.supermarket_items_list.each do |item| %>
+    <p>Item Name: <%=item.name%></p>
+  <% end %>
